@@ -1,0 +1,18 @@
+pipeline{
+  agent any
+
+  stages{
+    stage('checkout'){
+      echo "checking out code from github"
+      git branch: 'main', url: 'https://github.com/milanbista/pricing.git'
+
+    }
+
+    stage('build'){
+      sh '''
+        echo "Building Pricing Service"
+        ls
+      '''
+    }
+  }
+}
