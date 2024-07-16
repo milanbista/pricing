@@ -22,7 +22,7 @@ pipeline{
   stage('package'){
     steps{
       sh '''
-      cat build/libs
+      ls build/libs
       '''
     }
 
