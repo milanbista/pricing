@@ -26,7 +26,7 @@ pipeline{
       ##docker build -t pricing_img .
       docker images
       docker ps -a
-      #docker run -d -p 9777:8080 --name pricing_cont pricing_img
+      ##docker run -d -p 9777:8080 --name pricing_cont pricing_img
       '''
     }
 
