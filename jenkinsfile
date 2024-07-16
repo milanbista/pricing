@@ -22,7 +22,7 @@ pipeline{
   stage('package'){
     steps{
       sh '''
-      cat /buld/libs
+      cat build/libs
       '''
     }
 
