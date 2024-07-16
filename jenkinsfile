@@ -13,10 +13,19 @@ pipeline{
       steps{
           sh '''
           echo "Building Pricing Service"
-          ls
+          ./gradlew clean build
           '''
       }
-     
     }
+
+
+  stage('package'){
+    steps{
+      sh '''
+      cat /buld/libs
+      '''
+    }
+
+  }
   }
 }
