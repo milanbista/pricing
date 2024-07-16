@@ -3,7 +3,6 @@ pipeline{
 
   stages{
     stage('checkout'){
-      echo "checking out code from github"
       git branch: 'main', url: 'https://github.com/milanbista/pricing.git'
 
     }
