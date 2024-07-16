@@ -3,14 +3,14 @@ pipeline{
 
   stages{
     stage('checkout'){
-      step{
+      steps{
         git branch: 'main', url: 'https://github.com/milanbista/pricing.git'
       }
 
     }
 
     stage('build'){
-      step{
+      steps{
           sh '''
           echo "Building Pricing Service"
           ls
